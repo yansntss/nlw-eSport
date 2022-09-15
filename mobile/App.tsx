@@ -11,6 +11,7 @@ import { Home } from './src/screens/Home';
 
 
 import {Background } from './src/components/Background';
+import { Loading } from './src/components/Loading';
 
 
 export default function App() {
@@ -29,7 +30,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? }
+      {fontsLoaded ? <Home /> : <Loading /> }
     </Background>
   );
 }
